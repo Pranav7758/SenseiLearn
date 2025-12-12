@@ -6,6 +6,7 @@ export type Screen =
   | 'katakana'
   | 'kanji'
   | 'grammar'
+  | 'vocabulary'
   | 'daily'
   | 'progress'
   | 'settings'

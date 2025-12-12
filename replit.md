@@ -33,8 +33,10 @@ SenseiLearn is a gamified Japanese language learning application with a clean, d
 ## Key Features
 - **Gamification**: XP system, levels, streaks, achievements
 - **Character Practice**: Drawing canvas for stroke practice
+- **Vocabulary Learning**: JLPT N5-N1 vocabulary with flashcards and quizzes
 - **AI Sensei Coach**: Personalized learning recommendations via Gemini AI
 - **Daily Challenges**: Special quizzes for bonus XP
+- **Mini-Games**: 8 interactive games for engaging practice
 - **Cloud Sync**: Progress saved to Supabase
 
 ## Environment Variables
@@ -62,7 +64,23 @@ The app runs on port 5000 with `npm run dev`. The Express server serves both the
 - **Typography**: Inter font family
 - **Navigation**: Fixed bottom navbar with Dojo, Hiragana, Katakana, Kanji, and More tabs
 
-## Recent Changes (Dec 12, 2024 - Session 5)
+## Recent Changes (Dec 12, 2024 - Session 6)
+- Added comprehensive JLPT Vocabulary Learning System:
+  - Created vocabulary data file with N5-N1 words (200+ N5, 50+ each for N4-N1)
+  - Words include: word, reading, romaji, meaning, part of speech, category, examples
+  - Categories: greetings, numbers, time, people, places, verbs, adjectives, food, objects, nature
+  - VocabularyScreen with multiple learning modes:
+    - Overview: Progress tracking by JLPT level and category
+    - Browse: Scrollable word list with mastery indicators
+    - Flashcards: Interactive cards with flip animation, mark as known/unknown
+    - Quiz: Multiple choice meaning quiz with XP rewards
+  - Progress tracking: timesSeen, timesCorrect, accuracy, mastered status
+  - Cloud sync integration for vocabulary progress
+  - Added to bottom navbar "More" menu with 📖 icon
+- Fixed README.md broken emoji image URLs (replaced with correct Animated-Fluent-Emojis paths)
+- Cleaned up extra spacing/line breaks in README.md
+
+## Previous Changes (Dec 12, 2024 - Session 5)
 - Extracted project from nested SenseiLearnzipzipzipzip-1zipzip folder to root
 - Configured all environment variables securely:
   - SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY
