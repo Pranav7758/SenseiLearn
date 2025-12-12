@@ -1,0 +1,45 @@
+modules = ["nodejs-20"]
+[nix]
+channel = "stable-25_05"
+packages = ["unzip"]
+
+[agent]
+expertMode = true
+
+[userenv]
+
+[userenv.shared]
+SUPABASE_URL = "https://uezxzbutuarfqqqxxbpj.supabase.co"
+SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVlenh6YnV0dWFyZnFxcXh4YnBqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUxNzkyNzAsImV4cCI6MjA4MDc1NTI3MH0.JtX0JC2t7UUxw7KqJSrLi0_niuj2aaioCdlBDlt-Eu8"
+GEMINI_API_KEY = "AIzaSyDvh0h8_8Rp1xyA1WBiWHhW3sliJVJ3JRw"
+SUPABASE_SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVlenh6YnV0dWFyZnFxcXh4YnBqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NTE3OTI3MCwiZXhwIjoyMDgwNzU1MjcwfQ.Ir2IlSoSx3rebhKfeTmUQqv-HUMABmkqDTXn8t4ZLxk"
+VITE_SUPABASE_URL = "https://uezxzbutuarfqqqxxbpj.supabase.co"
+VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVlenh6YnV0dWFyZnFxcXh4YnBqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUxNzkyNzAsImV4cCI6MjA4MDc1NTI3MH0.JtX0JC2t7UUxw7KqJSrLi0_niuj2aaioCdlBDlt-Eu8"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "SenseiLearn Dev"
+
+[[workflows.workflow]]
+name = "SenseiLearn Dev"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[ports]]
+localPort = 5000
+externalPort = 80

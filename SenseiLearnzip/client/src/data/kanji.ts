@@ -1,0 +1,375 @@
+export interface KanjiCharacter {
+  character: string;
+  onyomi: string[];
+  kunyomi: string[];
+  meaning: string;
+  examples: { word: string; reading: string; meaning: string }[];
+  jlpt: 'N5' | 'N4';
+  strokeCount: number;
+}
+
+export const kanjiN5: KanjiCharacter[] = [
+  {
+    character: '日',
+    onyomi: ['ニチ', 'ジツ'],
+    kunyomi: ['ひ', 'か'],
+    meaning: 'day, sun',
+    examples: [
+      { word: '日本', reading: 'にほん', meaning: 'Japan' },
+      { word: '今日', reading: 'きょう', meaning: 'today' },
+      { word: '日曜日', reading: 'にちようび', meaning: 'Sunday' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '月',
+    onyomi: ['ゲツ', 'ガツ'],
+    kunyomi: ['つき'],
+    meaning: 'month, moon',
+    examples: [
+      { word: '月曜日', reading: 'げつようび', meaning: 'Monday' },
+      { word: '一月', reading: 'いちがつ', meaning: 'January' },
+      { word: '月', reading: 'つき', meaning: 'moon' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '火',
+    onyomi: ['カ'],
+    kunyomi: ['ひ'],
+    meaning: 'fire',
+    examples: [
+      { word: '火曜日', reading: 'かようび', meaning: 'Tuesday' },
+      { word: '火事', reading: 'かじ', meaning: 'fire (disaster)' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '水',
+    onyomi: ['スイ'],
+    kunyomi: ['みず'],
+    meaning: 'water',
+    examples: [
+      { word: '水曜日', reading: 'すいようび', meaning: 'Wednesday' },
+      { word: '水', reading: 'みず', meaning: 'water' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '木',
+    onyomi: ['モク', 'ボク'],
+    kunyomi: ['き'],
+    meaning: 'tree, wood',
+    examples: [
+      { word: '木曜日', reading: 'もくようび', meaning: 'Thursday' },
+      { word: '木', reading: 'き', meaning: 'tree' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '金',
+    onyomi: ['キン', 'コン'],
+    kunyomi: ['かね'],
+    meaning: 'gold, money',
+    examples: [
+      { word: '金曜日', reading: 'きんようび', meaning: 'Friday' },
+      { word: 'お金', reading: 'おかね', meaning: 'money' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 8,
+  },
+  {
+    character: '土',
+    onyomi: ['ド', 'ト'],
+    kunyomi: ['つち'],
+    meaning: 'earth, soil',
+    examples: [
+      { word: '土曜日', reading: 'どようび', meaning: 'Saturday' },
+      { word: '土', reading: 'つち', meaning: 'soil' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '一',
+    onyomi: ['イチ', 'イツ'],
+    kunyomi: ['ひと'],
+    meaning: 'one',
+    examples: [
+      { word: '一つ', reading: 'ひとつ', meaning: 'one (thing)' },
+      { word: '一人', reading: 'ひとり', meaning: 'one person' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 1,
+  },
+  {
+    character: '二',
+    onyomi: ['ニ'],
+    kunyomi: ['ふた'],
+    meaning: 'two',
+    examples: [
+      { word: '二つ', reading: 'ふたつ', meaning: 'two (things)' },
+      { word: '二人', reading: 'ふたり', meaning: 'two people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 2,
+  },
+  {
+    character: '三',
+    onyomi: ['サン'],
+    kunyomi: ['み', 'みっ'],
+    meaning: 'three',
+    examples: [
+      { word: '三つ', reading: 'みっつ', meaning: 'three (things)' },
+      { word: '三人', reading: 'さんにん', meaning: 'three people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '四',
+    onyomi: ['シ'],
+    kunyomi: ['よ', 'よん'],
+    meaning: 'four',
+    examples: [
+      { word: '四つ', reading: 'よっつ', meaning: 'four (things)' },
+      { word: '四人', reading: 'よにん', meaning: 'four people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 5,
+  },
+  {
+    character: '五',
+    onyomi: ['ゴ'],
+    kunyomi: ['いつ'],
+    meaning: 'five',
+    examples: [
+      { word: '五つ', reading: 'いつつ', meaning: 'five (things)' },
+      { word: '五人', reading: 'ごにん', meaning: 'five people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '六',
+    onyomi: ['ロク'],
+    kunyomi: ['む', 'むっ'],
+    meaning: 'six',
+    examples: [
+      { word: '六つ', reading: 'むっつ', meaning: 'six (things)' },
+      { word: '六人', reading: 'ろくにん', meaning: 'six people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '七',
+    onyomi: ['シチ'],
+    kunyomi: ['なな', 'なの'],
+    meaning: 'seven',
+    examples: [
+      { word: '七つ', reading: 'ななつ', meaning: 'seven (things)' },
+      { word: '七人', reading: 'しちにん', meaning: 'seven people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 2,
+  },
+  {
+    character: '八',
+    onyomi: ['ハチ'],
+    kunyomi: ['や', 'やっ'],
+    meaning: 'eight',
+    examples: [
+      { word: '八つ', reading: 'やっつ', meaning: 'eight (things)' },
+      { word: '八人', reading: 'はちにん', meaning: 'eight people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 2,
+  },
+  {
+    character: '九',
+    onyomi: ['キュウ', 'ク'],
+    kunyomi: ['ここの'],
+    meaning: 'nine',
+    examples: [
+      { word: '九つ', reading: 'ここのつ', meaning: 'nine (things)' },
+      { word: '九人', reading: 'きゅうにん', meaning: 'nine people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 2,
+  },
+  {
+    character: '十',
+    onyomi: ['ジュウ', 'ジッ'],
+    kunyomi: ['とお'],
+    meaning: 'ten',
+    examples: [
+      { word: '十', reading: 'じゅう', meaning: 'ten' },
+      { word: '十人', reading: 'じゅうにん', meaning: 'ten people' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 2,
+  },
+  {
+    character: '百',
+    onyomi: ['ヒャク'],
+    kunyomi: [],
+    meaning: 'hundred',
+    examples: [
+      { word: '百', reading: 'ひゃく', meaning: 'hundred' },
+      { word: '百円', reading: 'ひゃくえん', meaning: '100 yen' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 6,
+  },
+  {
+    character: '千',
+    onyomi: ['セン'],
+    kunyomi: ['ち'],
+    meaning: 'thousand',
+    examples: [
+      { word: '千', reading: 'せん', meaning: 'thousand' },
+      { word: '千円', reading: 'せんえん', meaning: '1000 yen' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '万',
+    onyomi: ['マン', 'バン'],
+    kunyomi: [],
+    meaning: 'ten thousand',
+    examples: [
+      { word: '一万', reading: 'いちまん', meaning: '10,000' },
+      { word: '万円', reading: 'まんえん', meaning: '10,000 yen' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '人',
+    onyomi: ['ジン', 'ニン'],
+    kunyomi: ['ひと'],
+    meaning: 'person',
+    examples: [
+      { word: '人', reading: 'ひと', meaning: 'person' },
+      { word: '日本人', reading: 'にほんじん', meaning: 'Japanese person' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 2,
+  },
+  {
+    character: '大',
+    onyomi: ['ダイ', 'タイ'],
+    kunyomi: ['おお'],
+    meaning: 'big, large',
+    examples: [
+      { word: '大きい', reading: 'おおきい', meaning: 'big' },
+      { word: '大学', reading: 'だいがく', meaning: 'university' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '小',
+    onyomi: ['ショウ'],
+    kunyomi: ['ちい', 'こ'],
+    meaning: 'small, little',
+    examples: [
+      { word: '小さい', reading: 'ちいさい', meaning: 'small' },
+      { word: '小学校', reading: 'しょうがっこう', meaning: 'elementary school' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '中',
+    onyomi: ['チュウ'],
+    kunyomi: ['なか'],
+    meaning: 'middle, inside',
+    examples: [
+      { word: '中', reading: 'なか', meaning: 'inside' },
+      { word: '中国', reading: 'ちゅうごく', meaning: 'China' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 4,
+  },
+  {
+    character: '上',
+    onyomi: ['ジョウ'],
+    kunyomi: ['うえ', 'あ'],
+    meaning: 'up, above',
+    examples: [
+      { word: '上', reading: 'うえ', meaning: 'above' },
+      { word: '上手', reading: 'じょうず', meaning: 'skillful' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '下',
+    onyomi: ['カ', 'ゲ'],
+    kunyomi: ['した', 'さ', 'くだ'],
+    meaning: 'down, below',
+    examples: [
+      { word: '下', reading: 'した', meaning: 'below' },
+      { word: '下手', reading: 'へた', meaning: 'unskillful' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '左',
+    onyomi: ['サ'],
+    kunyomi: ['ひだり'],
+    meaning: 'left',
+    examples: [
+      { word: '左', reading: 'ひだり', meaning: 'left' },
+      { word: '左手', reading: 'ひだりて', meaning: 'left hand' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 5,
+  },
+  {
+    character: '右',
+    onyomi: ['ウ', 'ユウ'],
+    kunyomi: ['みぎ'],
+    meaning: 'right',
+    examples: [
+      { word: '右', reading: 'みぎ', meaning: 'right' },
+      { word: '右手', reading: 'みぎて', meaning: 'right hand' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 5,
+  },
+  {
+    character: '山',
+    onyomi: ['サン'],
+    kunyomi: ['やま'],
+    meaning: 'mountain',
+    examples: [
+      { word: '山', reading: 'やま', meaning: 'mountain' },
+      { word: '富士山', reading: 'ふじさん', meaning: 'Mt. Fuji' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+  {
+    character: '川',
+    onyomi: ['セン'],
+    kunyomi: ['かわ'],
+    meaning: 'river',
+    examples: [
+      { word: '川', reading: 'かわ', meaning: 'river' },
+    ],
+    jlpt: 'N5',
+    strokeCount: 3,
+  },
+];
+
+export const allKanji = kanjiN5;
