@@ -23,7 +23,6 @@ import { ListeningChallengeGame } from "./components/screens/ListeningChallengeG
 import { SentenceScrambleGame } from "./components/screens/SentenceScrambleGame";
 import { BossBattleGame } from "./components/screens/BossBattleGame";
 import { VocabularyRaceGame } from "./components/screens/VocabularyRaceGame";
-import { VocabularyScreen } from "./components/screens/VocabularyScreen";
 import { AuthModal } from "./components/screens/AuthModal";
 import { useAchievementChecker } from "./hooks/useAchievementChecker";
 
@@ -57,8 +56,6 @@ function ScreenRouter() {
       return <KanjiScreen />;
     case 'grammar':
       return <GrammarScreen />;
-    case 'vocabulary':
-      return <VocabularyScreen />;
     case 'quiz':
       return <QuizScreen />;
     case 'daily':

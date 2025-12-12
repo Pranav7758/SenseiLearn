@@ -26,7 +26,6 @@ const sanitizeStateForCloud = (state: any) => ({
   username: state.username,
   characterProgress: state.characterProgress,
   grammarProgress: state.grammarProgress,
-  vocabularyProgress: state.vocabularyProgress,
   unlockedAchievements: state.unlockedAchievements,
   dailyChallengeCompleted: state.dailyChallengeCompleted,
   dailyChallengeDate: state.dailyChallengeDate,
@@ -111,16 +110,6 @@ export interface GrammarTopicProgress {
   lastPracticed: string;
 }
 
-export interface VocabularyWordProgress {
-  wordId: string;
-  jlpt: string;
-  timesSeen: number;
-  timesCorrect: number;
-  accuracy: number;
-  mastered: boolean;
-  lastPracticed: string;
-}
-
 export interface UserState {
   isAuthenticated: boolean;
   userId: string | null;
@@ -134,7 +123,6 @@ export interface UserState {
   settings: UserSettings;
   characterProgress: Record<string, CharacterProgress>;
   grammarProgress: Record<string, GrammarTopicProgress>;
-  vocabularyProgress: Record<string, VocabularyWordProgress>;
   unlockedAchievements: string[];
   dailyChallengeCompleted: boolean;
   dailyChallengeDate: string | null;
@@ -149,8 +137,6 @@ export interface UserState {
   updateStreak: () => void;
   updateCharacterProgress: (character: string, type: 'hiragana' | 'katakana' | 'kanji', correct: boolean) => void;
   updateGrammarProgress: (topicId: string, correct: boolean) => void;
-  updateVocabularyProgress: (wordId: string, jlpt: string, correct: boolean) => void;
-  getVocabularyMasteredCount: (jlpt: string) => number;
   markCharacterWeak: (character: string, type: 'hiragana' | 'katakana' | 'kanji', isWeak: boolean) => void;
   markCharacterMastered: (character: string, type: 'hiragana' | 'katakana' | 'kanji') => void;
   unlockAchievement: (achievementId: string) => void;
@@ -190,7 +176,6 @@ export const useUserStore = create<UserState>()(
       settings: defaultSettings,
       characterProgress: {},
       grammarProgress: {},
-      vocabularyProgress: {},
       unlockedAchievements: [],
       dailyChallengeCompleted: false,
       dailyChallengeDate: null,
@@ -355,50 +340,6 @@ export const useUserStore = create<UserState>()(
         if (state.userId) {
           debouncedCloudSync(state.userId, get);
         }
-      },
-
-      updateVocabularyProgress: (wordId, jlpt, correct) => {
-        set((state) => {
-          const existing = state.vocabularyProgress[wordId] || {
-            wordId,
-            jlpt,
-            timesSeen: 0,
-            timesCorrect: 0,
-            accuracy: 0,
-            mastered: false,
-            lastPracticed: new Date().toISOString(),
-          };
-
-          const timesSeen = existing.timesSeen + 1;
-          const timesCorrect = existing.timesCorrect + (correct ? 1 : 0);
-          const accuracy = Math.round((timesCorrect / timesSeen) * 100);
-          const mastered = timesSeen >= 3 && accuracy >= 70;
-
-          return {
-            vocabularyProgress: {
-              ...state.vocabularyProgress,
-              [wordId]: {
-                ...existing,
-                timesSeen,
-                timesCorrect,
-                accuracy,
-                mastered,
-                lastPracticed: new Date().toISOString(),
-              },
-            },
-          };
-        });
-        const state = get();
-        if (state.userId) {
-          debouncedCloudSync(state.userId, get);
-        }
-      },
-
-      getVocabularyMasteredCount: (jlpt) => {
-        const state = get();
-        return Object.values(state.vocabularyProgress)
-          .filter((p) => p.jlpt === jlpt && p.mastered)
-          .length;
       },
 
       markCharacterWeak: (character, type, isWeak) => set((state) => {

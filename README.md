@@ -58,13 +58,18 @@
   <a href="#"><img src="https://img.shields.io/badge/文法-GRAMMAR-10B981?style=for-the-badge&labelColor=1a1a1a" /></a>
 </p>
 
+<br/>
+
 ---
+
+<br/>
 
 <!-- Animated Divider -->
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700"/>
 </p>
 
+<br/>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Shinto%20Shrine.png" alt="Shinto Shrine" width="35" height="35" /> About | このアプリについて
 
@@ -117,7 +122,11 @@
 </tr>
 </table>
 
+<br/>
+
 ---
+
+<br/>
 
 <!-- Sakura Animation -->
 <p align="center">
@@ -152,13 +161,13 @@ Experience learning through play with our collection of engaging mini-games:
 <br/><sub>Type falling characters</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Crossed%20Swords.png" alt="Swords" width="60" height="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Crossed%20Swords.png" alt="Swords" width="60" height="60" />
 <br/><b>⚔️ Boss Battle</b>
 <br/><sub>ボス戦</sub>
 <br/><sub>Epic knowledge showdown</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Direct%20Hit.png" alt="Target" width="60" height="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Direct%20Hit.png" alt="Target" width="60" height="60" />
 <br/><b>🎯 Character Catch</b>
 <br/><sub>キャラキャッチ</sub>
 <br/><sub>Tap matching characters</sub>
@@ -178,7 +187,7 @@ Experience learning through play with our collection of engaging mini-games:
 <br/><sub>Speed vocabulary test</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Brick.png" alt="Brick" width="60" height="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Brick.png" alt="Brick" width="60" height="60" />
 <br/><b>🧱 Word Builder</b>
 <br/><sub>言葉ビルダー</sub>
 <br/><sub>Build words from kana</sub>
@@ -198,7 +207,11 @@ Experience learning through play with our collection of engaging mini-games:
 </tr>
 </table>
 
+<br/>
+
 ---
+
+<br/>
 
 <!-- Traditional Wave Divider -->
 <p align="center">
@@ -562,8 +575,8 @@ MIT License © 2024 SenseiLearn
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Mount%20Fuji.png" alt="Mount Fuji" width="60" height="60" />
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Shinto%20Shrine.png" alt="Shrine" width="60" height="60" />
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Cherry%20Blossom.png" alt="Sakura" width="60" height="60" />
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food-Drink/Teacup%20without%20Handle.png" alt="Tea" width="60" height="60" />
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food-Drink/Bento%20box.png" alt="Bento" width="60" height="60" />
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food-Drink/Teacup%20Without%20Handle.png" alt="Tea" width="60" height="60" />
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food-Drink/Bento%20Box.png" alt="Bento" width="60" height="60" />
 </p>
 
 <br/>

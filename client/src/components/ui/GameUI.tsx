@@ -12,7 +12,6 @@ const mainNavItems = [
 ] as const;
 
 const moreNavItems = [
-  { id: 'vocabulary', label: 'Vocabulary', icon: '📖' },
   { id: 'grammar', label: 'Grammar', icon: '📜' },
   { id: 'daily', label: 'Quest', icon: '⚔️' },
   { id: 'games', label: 'Games', icon: '🎮' },
